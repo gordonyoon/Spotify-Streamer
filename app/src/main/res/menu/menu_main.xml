@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_now_playing"
+        android:orderInCategory="100"
+        android:title="@string/now_playing"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_item_share"
+        myapp:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        myapp:showAsAction="ifRoom"
+        android:orderInCategory="150"
+        android:title="@string/menu_item_share" />
+    <item
+        android:id="@+id/select_country"
+        android:orderInCategory="200"
+        myapp:showAsAction="never"
+        android:title="@string/select_country" />
+    <item
+        android:id="@+id/toggle_controls"
+        android:orderInCategory="300"
+        myapp:showAsAction="never"
+        android:title="@string/toggle_controls" />
+</menu>
