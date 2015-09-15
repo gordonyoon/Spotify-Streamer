@@ -66,7 +66,7 @@ public class PlayerFragment extends DialogFragment implements SeekBar.OnSeekBarC
     public static PlayerFragment newInstance(List<TrackInfo> trackInfos, int position) {
         PlayerFragment fragment = new PlayerFragment();
         Bundle args = new Bundle();
-        ArrayList<TrackInfo> trackInfosArrayList = new ArrayList<>(trackInfos);
+        ArrayList<TrackInfo> trackInfosArrayList = new ArrayList<TrackInfo>(trackInfos);
         args.putParcelableArrayList(ARG_TRACK_INFOS, trackInfosArrayList);
         args.putInt(ARG_POSITION, position);
         fragment.setArguments(args);

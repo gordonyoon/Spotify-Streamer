@@ -37,7 +37,7 @@ public class ArtistInfo implements Parcelable {
     }
 
     public static List<ArtistInfo> getArtistInfoList(List<Artist> artists) {
-        List<ArtistInfo> artistInfos = new ArrayList<>();
+        List<ArtistInfo> artistInfos = new ArrayList<ArtistInfo>();
         for (Artist artist : artists) {
             artistInfos.add(new ArtistInfo(artist));
         }

@@ -62,7 +62,7 @@ public class TrackInfo implements Parcelable {
     }
 
     public static List<TrackInfo> getTrackInfoList(List<Track> tracks) {
-        List<TrackInfo> trackInfos = new ArrayList<>();
+        List<TrackInfo> trackInfos = new ArrayList<TrackInfo>();
         for (Track track : tracks) {
             trackInfos.add(new TrackInfo(track));
         }

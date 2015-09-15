@@ -181,7 +181,7 @@ public class TrackFragment extends ListFragment {
                             getString(R.string.preference_file_key),
                             Context.MODE_PRIVATE);
 
-                    HashMap<String, Object> map = new HashMap<>();
+                    HashMap<String, Object> map = new HashMap<String, Object>();
                     String country = prefs.getString(SelectCountryDialogFragment.KEY_COUNTRY, null);
                     if (country != null) {
                         String countryCode = country.substring(country.length() - 2);
