@@ -141,21 +141,21 @@ public class PlayerService extends Service implements MediaPlayer.OnPreparedList
         return Service.START_STICKY_COMPATIBILITY;
     }
 
-    @Override
-    public boolean onUnbind(Intent intent) {
-        return true;
-    }
+//    @Override
+//    public boolean onUnbind(Intent intent) {
+//        return true;
+//    }
 
-    @Override
-    public void onRebind(Intent intent) {
-        super.onRebind(intent);
-
-        if (mPlayState) {
-            updatePlayPause(false);
-        } else {
-            updatePlayPause(true);
-        }
-    }
+//    @Override
+//    public void onRebind(Intent intent) {
+//        super.onRebind(intent);
+//
+//        if (mPlayState) {
+//            updatePlayPause(false);
+//        } else {
+//            updatePlayPause(true);
+//        }
+//    }
 
     @Override
     public void onCreate() {
