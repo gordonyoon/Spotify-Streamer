@@ -342,7 +342,9 @@ public class PlayerFragment extends DialogFragment implements SeekBar.OnSeekBarC
                         break;
                     case PlayerService.MSG_UPDATE_PLAYER:
                         TrackInfo trackInfo = msg.getData().getParcelable(PlayerService.KEY_TRACK_INFO);
-                        updatePlayerUi(trackInfo);
+                        if (trackInfo != null) {
+                            updatePlayerUi(trackInfo);
+                        }
 
                         int duration = msg.getData().getInt(PlayerService.KEY_DURATION);
                         setDuration(duration);
